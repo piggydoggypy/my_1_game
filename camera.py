@@ -14,7 +14,7 @@ class Camera:
         return abs(rect.x - self.hero.rect.x) <= self.width and abs(rect.y - self.hero.rect.y) <= self.height
 
     def new_rect_for_tile(self,x, y) -> pygame.Rect:
-        return pygame.Rect(x*16 - self.hero.rect.x, y*16 - self.hero.rect.y, 16, 16)
+        return pygame.Rect(x*32 - self.hero.rect.x, y*32 - self.hero.rect.y, 32, 32)
 
 
     # def new_coors(self):

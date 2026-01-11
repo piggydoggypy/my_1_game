@@ -12,10 +12,10 @@ from random import randrange
 def render_noise() -> list:
             ### генерация основного шума и параметризация ###
 
-    # noise = PerlinNoise(octaves=2, seed=randrange(1000, 9999)) # рандомный сид
-    noise = PerlinNoise(octaves=2, seed=2048)
+    noise = PerlinNoise(octaves=2, seed=randrange(1000, 9999)) # рандомный сид
+    # noise = PerlinNoise(octaves=2, seed=2048)
     amp = 1 # отвечает за высоту(за биомы)
-    period = 100 # чем больше, тем более гладкий шум
+    period = 75 # чем больше, тем более гладкий шум
     terrain_width = 300
 
     #генерация матрицы для представления ландшафта

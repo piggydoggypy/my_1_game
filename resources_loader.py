@@ -6,21 +6,20 @@ BASE_PATH = "files/tiles"
 
 RESOURCES = {
     'water': [
-        "water_1",
-        "water_2",
-        "water_3",
-        "water_cornerland_down-left",
-        "water_cornerland_down-right",
-        "water_cornerland_up-left",
-        "water_cornerland_up-right",
-        "water_land_down",
-        "water_land_up",
-        "water_land_right",
-        "water_land_left",
-        "water_land_down-left",
-        "water_land_up-right",
-        "water_cornerland_down-right",
-        "water_land_up-left"
+        "water_1",#0
+        "water_2",#1
+        "water_cornerland_down-left",#2
+        "water_cornerland_down-right",#3
+        "water_cornerland_up-left",#4
+        "water_cornerland_up-right",#5
+        "water_land_down",#6
+        "water_land_up",#7
+        "water_land_right",#8
+        "water_land_left",#9
+        "water_land_down-left",#10
+        "water_land_up-right",#11
+        "water_land_down-right",#12
+        "water_land_up-left"#13
     ],
     'land': [
         "grass_1",
@@ -46,7 +45,7 @@ def res_load() -> dict:
                 # Загружаем изображение
                 image = pygame.image.load(filepath)
                 loaded_resources[category].append(image)
-                # print(f"Загружен: {filepath}")
+                print(f"Загружен: {filepath}")
 
     except Exception as e:
         print(f'Ошибка загрузки файлов: {e}')
